@@ -19,12 +19,12 @@ When you configure a proxy through the network settings, it typically only appli
    ```
 
 This will open the configuration file in a text editor.
-Copy the statements below and modify them by replacing tempuser2 with your username and rgukt123 with your password:
+Copy the statements below and modify them by replacing *username* with your username, *password* with your password, *hostelinternet.rgukt.ac.in* with your domain and *3128* with your proxy server's port number:
 
-    Acquire::http::Proxy "http://tempuser2:rgukt123@hostelinternet.rgukt.ac.in:3128/";
-    Acquire::https::Proxy "http://tempuser2:rgukt123@hostelinternet.rgukt.ac.in:3128/";
-    Acquire::socks::Proxy "http://tempuser2:rgukt123@hostelinternet.rgukt.ac.in:3128/";
-    Acquire::ftp::Proxy "http://tempuser2:rgukt123@hostelinternet.rgukt.ac.in:3128/";
+    Acquire::http::Proxy "http://username:password@hostelinternet.rgukt.ac.in:3128/";
+    Acquire::https::Proxy "http://username:password@hostelinternet.rgukt.ac.in:3128/";
+    Acquire::socks::Proxy "http://username:password@hostelinternet.rgukt.ac.in:3128/";
+    Acquire::ftp::Proxy "http://username:password@hostelinternet.rgukt.ac.in:3128/";
 
 Save the file and close the editor.
 
